@@ -1,0 +1,12 @@
+.current {
+    position: relative;
+}
+
+.list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.no-scroll {
+    overflow: hidden;
+}

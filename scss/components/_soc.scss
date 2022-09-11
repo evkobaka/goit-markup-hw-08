@@ -1,0 +1,43 @@
+.soc {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.soc__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.soc-icon--color-dark {
+    fill: currentColor;
+}
+
+.soc-link--color-light {
+    background-color: #ffffff;
+    color: #afb1b8;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:hover, &:focus {
+                background-color: #2196f3;
+                color: #ffffff;
+            }
+}
+
+.soc-icon--color-light {
+    fill: #ffffff;
+}
+
+.soc-link--color-dark {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #afb1b8;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover, &:focus {
+            background-color: #2196f3;
+}
+}
