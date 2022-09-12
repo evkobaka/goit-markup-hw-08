@@ -37,7 +37,7 @@
           </ul>
         </nav>
         <ul class="connect list header__connect">
-          <li>
+          <li class="header__mail">
             <a href="mailto:info@devstudio.com" class="connect__mail link"
               ><svg class="connect__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a
@@ -68,7 +68,7 @@
         <nav class="mob-menu-nav">
           <ul class="mob-menu-list list">
             <li class="mob-menu-item">
-              <a href="./index.html" class="mob-menu-link link">Студия</a>
+              <a href="./index.html" class="mob-menu-link link mob-current">Студия</a>
             </li>
             <li class="mob-menu-item">
               <a href="./portfolio.html" class="mob-menu-link link">Портфолио</a>
@@ -110,7 +110,7 @@
 
       <section class="description section">
         <div class="container">
-          <h2 hidden>Наши преимущества</h2>
+          <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="list description-list">
             <li class="description-wrap">
               <div class="description-item">
@@ -165,41 +165,29 @@
           <h2 class="photo-title">Чем мы занимаемся</h2>
           <ul class="list photo-list">
             <li class="photo-link">
-              <div class="photo-item">
-              <a href="">
                 <img class="photo-img"
                 srcset="./images/box1.jpg 1x,
                 ./images/box1-2x.jpg 2x"
                   src="./images/box1.jpg"
                   alt="Человек работает за айпадом"
-                 
                 />
-              </div>
-                <p class="photo-text">Десктопные приложения</p>
-              </a>
+              <p class="photo-text">Десктопные приложения</p>
             </li>
-
             <li class="photo-link">
-              <a href="">
                 <img class="photo-img"
                 srcset="./images/box2.jpg 1x,
                 ./images/box2-2x.jpg 2x"
                   src="./images/box2.jpg"
                   alt="Человек работает за телефоном и ноутбуком"
-                  
                 />
                 <p class="photo-text">Мобильные приложения</p>
-              </a>
             </li>
-
             <li class="photo-link">
-              <a href="">
                 <img class="photo-img" 
                 srcset="./images/box3.jpg 1x,
                 ./images/box3-2x.jpg 2x"
                 src="./images/box3.jpg" alt="В руках планшет" />
                 <p class="photo-text">Дизайнерские решения</p>
-              </a>
             </li>
           </ul>
         </div>
@@ -226,9 +214,10 @@
               ./images/dem-mob-2x.jpg 2x"
               media="(max-width: 767px)"
               />
-              </picture>
+              
               <img class="team-photo"
               src="./images/dem.jpg" alt="Фото сотрудника" />
+            </picture>
               <div class="member">
                 <h3 class="team-member">Игорь Демьяненко</h3>
                 <p class="team-member-text">Product Designer</p>
@@ -281,9 +270,10 @@
               ./images/rep-mob-2x.jpg 2x"
               media="(max-width: 767px)"
               />
-              </picture>
+              
               <img class="team-photo"
               src="./images/rep.jpg" alt="Фото сотрудника" />
+            </picture>
               <div class="member">
                 <h3 class="team-member">Ольга Репина</h3>
                 <p class="team-member-text">Frontend Developer</p>
@@ -336,9 +326,10 @@
               ./images/tar-mob-2x.jpg 2x"
               media="(max-width: 767px)"
               />
-              </picture>
+              
               <img class="team-photo"
               src="./images/tar.jpg" alt="Фото сотрудника" />
+            </picture>
               <div class="member">
                 <h3 class="team-member">Николай Тарасов</h3>
                 <p class="team-member-text">Marketing</p>
@@ -391,9 +382,10 @@
               ./images/er-mob-2x.jpg 2x"
               media="(max-width: 767px)"
               />
-              </picture>
+             
               <img class="team-photo"
               src="./images/er.jpg" alt="Фото сотрудника" />
+            </picture>
               <div class="member">
                 <h3 class="team-member">Михаил Ермаков</h3>
                 <p class="team-member-text">UI Designer</p>
@@ -488,10 +480,9 @@
       <div class="container">
         <div class="footer-contacts">
         <div class="contact-wrap">
-          <h3 hidden>Контакты</h3>
           <a href="/" class="logo">Web<span class="logo--color-light">Studio</span></a>
-          <address>
-            <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+          <address class="address">
+            <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="footer__list">
               <li class="footer__mail">
                 <a href="mailto:info@devstudio.com" class="footer__link link">info@devstudio.com</a>
@@ -501,7 +492,7 @@
           </address>
         </div>
         <div class="footer__items">
-          <h3 class="footer__title">Присоединяйтесь</h3>
+          <p class="footer__title">Присоединяйтесь</p>
           <ul class="soc list">
             <li>
               <a href="" class="soc__link soc-link--color-dark">
@@ -534,8 +525,9 @@
           </ul>
         </div>
       </div>
+      <form class="form">
         <div class="footer__mailing">
-          <h3 class="footer__title">Подпишитесь на рассылку</h3>
+          <p class="footer__title">Подпишитесь на рассылку</p>
           <input
             type="email"
             class="footer__input"
@@ -544,13 +536,12 @@
             id="send-email"
           />
         </div>
-    
-        <button type="submit" class="footer__btn">
+            <button type="submit" class="footer__btn">
           Подписаться<svg class="footer__icon" width="24" height="24">
             <use href="./images/icons.svg#icon-send"></use>
           </svg>
         </button>
-      
+      </form>
       </div>
     </footer>
 
@@ -599,7 +590,7 @@
               class="modal-text"
             ></textarea>
           </div>
-          <div class="modal-field check-wrap">
+          <div class="check-wrap">
             <input
               type="checkbox"
               name="policy"

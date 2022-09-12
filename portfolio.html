@@ -24,6 +24,7 @@
   <body>
     <header class="header port-header">
       <div class="container">
+        
         <nav class="navigation">
           <a href="/" class="logo">Web<span class="logo--color-dark">Studio</span></a>
           <ul class="list">
@@ -34,6 +35,7 @@
             <li class="navigation__item"><a href="" class="navigation__link link">Контакты</a></li>
           </ul>
         </nav>
+      
         <ul class="list connect header__connect">
           <li>
             <a href="mailto:info@devstudio.com" class="connect__mail link"
@@ -52,7 +54,7 @@
             </a>
           </li>
         </ul>
-
+      
         <button class="menu-open" type="button">
           <svg class="btn-icon" width="24" height="16">
             <use href="./images/icons.svg#icon-menu"></use>
@@ -73,7 +75,7 @@
               <a href="./index.html" class="mob-menu-link link">Студия</a>
             </li>
             <li class="mob-menu-item">
-              <a href="./portfolio.html" class="mob-menu-link link">Портфолио</a>
+              <a href="./portfolio.html" class="mob-menu-link link mob-current">Портфолио</a>
             </li>
             <li class="mob-menu-item"><a href="" class="mob-menu-link link">Контакты</a></li>
           </ul>
@@ -116,7 +118,7 @@
           </ul>
         </div>
 
-        <h1 hidden>Контент</h1>
+        <h1 class="visually-hidden">Контент</h1>
         <div class="container">
           <ul class="list__cards cards">
             <li class="card">
@@ -138,9 +140,10 @@
                   ./images/card1-mob-2x.jpg 2x"
                   media="(max-width: 767px)"
                   />
-                  </picture>
+                  
                   <img class="card__image no-gap"
                   src="./images/card1.jpg" alt="Технокряк" />
+                </picture>
                 </a>
                 <p class="card__top-text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolore atque nostrum
@@ -172,9 +175,10 @@
                   ./images/card2-mob-2x.jpg 2x"
                   media="(max-width: 767px)"
                   />
-                  </picture>
+                  
                   <img class="card__image no-gap"
                   src="./images/card2.jpg" alt="Постер" />
+                </picture>
                 </a>
                 <p class="card__top-text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolore atque nostrum
@@ -206,9 +210,10 @@
                   ./images/card3-mob-2x.jpg 2x"
                   media="(max-width: 767px)"
                   />
-                  </picture>
+                  
                   <img class="card__image no-gap"
                   src="./images/card3.jpg" alt="Seafood" />
+                </picture>
                 </a>
                 <p class="card__top-text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolore atque nostrum
@@ -240,9 +245,10 @@
                   ./images/card4-mob-2x.jpg 2x"
                   media="(max-width: 767px)"
                   />
-                  </picture>
+                  
                   <img class="card__image no-gap"
                   src="./images/card4.jpg" alt="Проект Prime" />
+                </picture>
                 </a>
                 <p class="card__top-text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolore atque nostrum
@@ -274,9 +280,10 @@
               ./images/card5-mob-2x.jpg 2x"
               media="(max-width: 767px)"
               />
-              </picture>
+              
               <img class="card__image no-gap"
               src="./images/card5.jpg" alt="Проект Boxes" />
+            </picture>
                 </a>
                 <p class="card__top-text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolore atque nostrum
@@ -308,9 +315,10 @@
                   ./images/card6-mob-2x.jpg 2x"
                   media="(max-width: 767px)"
                   />
-                  </picture>
+                  
                   <img class="card__image no-gap"
                   src="./images/card6.jpg" alt="Моноблок" />
+                </picture>
                 </a>
                 <p class="card__top-text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolore atque nostrum
@@ -342,9 +350,10 @@
                   ./images/card7-mob-2x.jpg 2x"
                   media="(max-width: 767px)"
                   />
-                  </picture>
+                  
                   <img class="card__image no-gap"
                   src="./images/card7.jpg" alt="Журнал" />
+                </picture>
                 </a>
                 <p class="card__top-text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolore atque nostrum
@@ -376,9 +385,10 @@
                   ./images/card8-mob-2x.jpg 2x"
                   media="(max-width: 767px)"
                   />
-                  </picture>
+                  
                   <img class="card__image no-gap"
                   src="./images/card8.jpg" alt="Лейбл" />
+                </picture>
                 </a>
                 <p class="card__top-text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolore atque nostrum
@@ -410,9 +420,10 @@
                   ./images/card9-mob-2x.jpg 2x"
                   media="(max-width: 767px)"
                   />
-                  </picture>
+                  
                   <img class="card__image no-gap"
                   src="./images/card9.jpg" alt="Ноутбук" />
+                </picture>
                 </a>
                 <p class="card__top-text">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolore atque nostrum
@@ -434,10 +445,9 @@
       <div class="container port-container">
         <div class="footer-contacts">
         <div class="contact-wrap">
-          <h3 hidden>Контакты</h3>
           <a href="/" class="logo">Web<span class="logo--color-light">Studio</span></a>
-          <address>
-            <p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+          <address class="address">
+            <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
             <ul class="footer__list">
               <li class="footer__mail">
                 <a href="mailto:info@devstudio.com" class="footer__link link">info@devstudio.com</a>
@@ -447,7 +457,7 @@
           </address>
         </div>
         <div class="footer__items">
-          <h3 class="footer__title">Присоединяйтесь</h3>
+          <p class="footer__title">Присоединяйтесь</p>
           <ul class="soc list">
             <li>
               <a href="" class="soc__link soc-link--color-dark">
@@ -481,7 +491,7 @@
         </div>
       </div>
         <div class="footer__mailing">
-          <h3 class="footer__title">Подпишитесь на рассылку</h3>
+          <p class="footer__title">Подпишитесь на рассылку</p>
           <input
             type="email"
             class="footer__input"

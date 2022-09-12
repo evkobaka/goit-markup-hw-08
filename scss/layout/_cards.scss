@@ -27,11 +27,14 @@
         }
         @media screen and (min-width: 768px) {
             width: calc((100% - 30px) / 2);
+            
         }
         @media screen and (min-width: 1200px) {
             width: calc((100% - 60px) / 3);
         }
 }
+
+
 
 .card__description {
     border: 1px solid #eeeeee;
@@ -63,7 +66,7 @@
     line-height: 1.55;
     padding: 40px;
     background-color: rgba(33, 150, 243, 0.9);
-    transform: translateY(100%);
+    transform: translateY(101%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     overflow: auto;
     .card:hover &, .card:focus & {
